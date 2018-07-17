@@ -1,0 +1,560 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Law</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="" />
+
+<meta name="author" content="" />
+
+<meta property="og:title" content=""/>
+
+<meta property="og:image" content=""/>
+
+<meta property="og:url" content=""/>
+
+<meta property="og:site_name" content=""/>
+
+<meta property="og:description" content=""/>
+
+<meta name="twitter:title" content="" />
+
+<meta name="twitter:image" content="" />
+
+<meta name="twitter:url" content="" />
+
+<meta name="twitter:card" content="" />
+
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	
+<link rel="stylesheet" href="/static/css/animate.css">
+	
+<link rel="stylesheet" href="/static/css/icomoon.css">
+	
+<link rel="stylesheet" href="/static/css/bootstrap.css">
+
+<link rel="stylesheet" href="/static/css/magnific-popup.css">
+
+<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+	
+<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="/static/css/flexslider.css">
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+<script src="/static/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+	
+<body>
+		
+<div class="fh5co-loader"></div>
+	
+<div id="page">
+
+<nav class="fh5co-nav" role="navigation">
+		
+<div class="top-menu">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-xs-2">
+
+<div id="fh5co-logo">
+
+<img src="/static/images/logo.png"></div>
+
+</div>
+
+<div class="col-xs-10 text-right menu-1">
+
+<ul>
+
+<li class="btn-cta"><a href="{% url 'login_app:logout' %}"><span>Logout</span></a></li>
+{% if  request.user.is_authenticated %} 
+<h2 style="color:red;font-family:Arial;">Hi 
+{{request.user.username}}!</h2>
+{% endif %}
+{% if request.user.profile.pic %}
+<img src="{{request.user.profile.pic.url}}"width=100 height=100/>
+{% endif %}
+				
+</ul>
+					
+</div>
+				
+</div>
+				
+</div>
+		
+</div>
+
+</nav>
+
+<aside id="fh5co-hero" class="js-fullheight">
+		
+<div class="flexslider js-fullheight">
+			
+<ul class="slides">
+		   	
+<li style="background-image: url(/static/images/Legal-Practice.jpg);">
+		   		
+<div class="overlay-gradient"></div>
+		   		
+<div class="container">
+		   			
+<div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
+		   				
+<div class="slider-text-inner desc">
+		   					
+<h2 class="heading-section" style="font-family:Algerian;"> Practicing Areas </h2>
+		   					
+</div>
+
+</div>
+
+</div>
+		   	
+</li>
+
+</ul>
+
+</div>
+	
+</aside>
+
+<div id="fh5co-practice" class="fh5co-bg-section">
+
+<div class="container">
+
+<div class="row animate-box">
+
+<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+			
+<h2> <b> Our Legal Practice Areas </b> </h2>
+					
+<p style = "font-family:Cooper Black;"> We deal in the stated fields and have excellent experience in these fields ...
+
+</p>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-4 text-center animate-box">
+					
+<div class="services">
+
+<span class="icon">
+	
+<i class="icon-home"></i>
+
+</span>
+
+<div class="desc">
+
+<h3><a href="/prop/">Intellectual Property Law</a></h3>
+						
+<p>Intellectual property is a property right that relates to intangible property such as patents, trademarks, 
+copyrights, and trade secrets. 
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 text-center animate-box">
+
+<div class="services">
+
+<span class="icon">
+
+<i class="icon-eye"></i>
+
+</span>
+
+<div class="desc">
+							
+<h3><a href="/criminal/">Criminal Law</a></h3>
+					
+<p> Criminal law is the body of law that relates to crime. It proscribes conduct perceived as threatening, harmful, or 
+otherwise endangering to the property, health, safety, and moral welfare of people.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 text-center animate-box">
+
+<div class="services">
+
+<span class="icon">
+		
+<i class="icon-shopping-cart"></i>
+		
+</span>
+						
+<div class="desc">
+
+<h3><a href="/civil/">Civil Law</a></h3>
+
+<p> The Civil Law consists of a body of rules, procedures, regulations and judicial precedents that helps in resolving 
+the various non-criminal disputes. These disputes are either between individuals or organizations.
+
+</p>
+
+</div>
+					
+</div>
+
+</div>
+				
+<div class="col-md-4 text-center animate-box">
+					
+<div class="services">
+						
+<span class="icon">
+							
+<i class="icon-umbrella"></i>
+						
+</span>
+						
+<div class="desc">
+							
+<h3><a href="/corporate/">Corporate / M & A Law</a></h3>
+						
+<p> Corporate law is related to commercial and contract law. A corporation is a legal entity created through the laws of its 
+state of incorporation, treating a corporation as a legal "person" that has standing to sue and be sued, distinct
+from its stockholders.
+
+</p>
+					
+</div>
+					
+</div>
+
+</div>
+				
+<div class="col-md-4 text-center animate-box">
+
+<div class="services">
+
+<span class="icon">
+		
+<i class="icon-heart"></i>
+						
+</span>
+						
+<div class="desc">
+							
+<h3><a href="/matrimonial/">Matrimonial Law</a></h3>
+						
+<p> Within the field of family law are all kinds of issues such as marriage, separation, and divorce, as well as child 
+adoption, custody, and access. Matrimonial law is a branch of family law that specifically deals with issues 
+that relate to marriage.
+
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="fh5co-testimonial">
+
+<div class="row animate-box">
+
+<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+
+<h2>Testimonials</h2>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-10 col-md-offset-1">
+
+<div class="row animate-box">
+
+<div class="owl-carousel owl-carousel-fullwidth">
+
+<div class="item">
+
+<div class="testimony-slide active text-center">
+
+<figure>
+
+<img src="/static/images/vishesh.jpeg" alt="user">
+
+</figure>
+
+<span>Vishesh; A client, Chambers & Partners 2018 </span>
+
+<blockquote>
+
+<p>
+Leader in the field for claimant brain injury work who knows the law inside out and adopts the rights tactics and strategy 
+to get the best results for clients.
+</p>
+
+</blockquote>
+
+</div>
+
+</div>
+
+<div class="item">
+
+<div class="testimony-slide active text-center">
+
+<figure>
+
+<img src="/static/images/naveen.jpeg" alt="user">
+
+</figure>
+
+<span>Naveen; A client, Chambers & Partners 2018 </span>
+
+<blockquote>
+
+<p>
+Excellent communication skills and ability to put clients at ease and reassure them in difficult situations.
+</p>
+
+</blockquote>
+
+</div>
+
+</div>
+
+<div class="item">
+
+<div class="testimony-slide active text-center">
+
+<figure>
+
+<img src="/static/images/utsav.jpeg" alt="user">
+
+</figure>
+
+<span>Utsav; A client, Chambers & Partners 2018</span>
+
+<blockquote>
+
+<p>
+He is exceptionally good, very organised, and they are considerate of their clients needs.
+</p>
+
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div id="fh5co-started" style="background-image:url(/static/images/ledad.jpg);">
+
+<div class="overlay"></div>
+
+<div class="container">
+
+<div class="row animate-box">
+
+<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+
+<h2> <b> Legal Advice </b> </h2>
+
+<p style="font-family:Cooper Black;">We help people effectively fight their offenders back and 
+successfully defend their own stand!</p>
+
+</div>
+
+</div>
+
+<div class="row animate-box">
+
+<div class="col-md-8 col-md-offset-2 text-center">
+
+<p><a href="/counseling/" class="btn btn-default btn-lg">Consultation</a></p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer id="fh5co-footer" role="contentinfo">
+
+<div class="container">
+
+<div class="row row-pb-md">
+
+<div class="col-md-3 fh5co-widget">
+					
+<h4 style="color:grey;"> <b> Advocate's Law </b></h4>
+
+<p style="font-family:Baskerville Old Face;"> The advocate is highly skilled and humble person. Handles the cases with utmost
+sincerity and dedication. Has solved many cases and has also been awarded with best internship trainee awards during the 
+initial years of his practice.
+
+</p>
+
+</div>
+
+<div class="col-md-3 col-md-push-1">
+
+<h4 style="color:grey;"> <b> Navigation </b></h4>
+
+<ul class="fh5co-footer-links">
+
+<li style="font-family:Baskerville Old Face;"><a href="/">Home</a></li>
+	
+<li style="font-family:Baskerville Old Face;"><a href="/practice/">Practice Areas</a></li>
+
+<li style="font-family:Baskerville Old Face;"><a href="/blog/">Blog</a></li>
+
+<li style="font-family:Baskerville Old Face;"><a href="/about/">About us</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-md-3 col-md-push-1">
+
+<h4 style="color:grey;"> <b> Contact Information </b> </h4>
+
+<ul class="fh5co-footer-links">
+
+<li style="font-family:Baskerville Old Face;">Chamber No. 202 <br> Lawyer's Chamber Block, <br> Rohini Court, <br> New Delhi</li>
+
+<li style="font-family:Baskerville Old Face;">+91 7827017715</li>
+
+<li style="font-family:Baskerville Old Face;"><a href="mailto:law.site18@gmail.com">law.site18@gmail.com</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-md-3 col-md-push-1">
+
+<h4 style="color:grey;"> <b> Opening Hours </b> </h4>
+
+<ul class="fh5co-footer-links">
+
+<li style="font-family:Baskerville Old Face;">Mon - Fri :  10:00 - 18:00 </li>
+
+<li style="font-family:Baskerville Old Face;">Sat - Sun :  closed </li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="row copyright">
+
+<div class="col-md-12 text-center">
+
+<p>
+
+<small class="block">&copy; Chamber of Prateek Arora & Advocates. All Rights Reserved. </small> 
+
+<small class="block">Designed by <a href="/theunited/">The_United_Team</a>
+
+</p>
+
+<p>
+
+<ul class="fh5co-social-icons">
+
+<li><a href="#"><i class="icon-twitter"></i></a></li>
+
+<li><a href="#"><i class="icon-facebook"></i></a></li>
+
+<li><a href="#"><i class="icon-linkedin"></i></a></li>
+
+<li><a href="#"><i class="icon-dribbble"></i></a></li>
+
+</ul>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+</div>
+
+<div class="gototop js-top">
+
+<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+
+</div>
+
+<script src="/static/js/jquery.min.js"></script>
+
+<script src="/static/js/jquery.easing.1.3.js"></script>
+
+<script src="/static/js/bootstrap.min.js"></script>
+
+<script src="/static/js/jquery.waypoints.min.js"></script>
+
+<script src="/static/js/jquery.stellar.min.js"></script>
+
+<script src="/static/js/owl.carousel.min.js"></script>
+
+<script src="/static/js/jquery.flexslider-min.js"></script>
+
+<script src="/static/js/jquery.countTo.js"></script>
+	
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+
+<script src="/static/js/magnific-popup-options.js"></script>
+
+<script src="/static/js/main.js"></script>
+
+</body>
+
+</html>
